@@ -7,6 +7,16 @@ class ListaEnlazada:
     def __init__(self) -> None:
         self.cabeza = None
         
+    def __str__(self) -> str:
+        valores = []
+        nodo_actual = self.cabeza
+        
+        while nodo_actual:
+            valores.append(str(nodo_actual.valor))
+            nodo_actual = nodo_actual.siguiente
+            
+        return "[" + ", ".join(valores) + "]"
+        
     def push(self, valor)-> None:
         nuevo_nodo = Nodo(valor)
         nuevo_nodo.siguiente = self.cabeza
@@ -72,12 +82,6 @@ class ListaEnlazada:
         
         self.cabeza = nodo_anterior
         
-    def printList(self)-> None:
-        nodo_actual = self.cabeza
-        
-        while nodo_actual:
-            print(nodo_actual.valor)
-            nodo_actual = nodo_actual.siguiente
 
 mi_lista = ListaEnlazada()
 
@@ -86,12 +90,9 @@ mi_lista.append(1)
 mi_lista.append(2)
 mi_lista.append(3)
 
-
-
-mi_lista.printList()
-print('--------------------------')
+print(mi_lista)
 mi_lista.invertList()
-mi_lista.printList()
+print(mi_lista)
 
 
 
