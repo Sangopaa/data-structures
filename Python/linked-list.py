@@ -86,9 +86,9 @@ class ListaEnlazada:
 mi_lista = ListaEnlazada()
 
 # Agregar elementos al principio (push)
-mi_lista.append(1)
-mi_lista.append(2)
-mi_lista.append(3)
+mi_lista.append('holaa')
+mi_lista.append('como')
+mi_lista.append('estaaas')
 
 print(mi_lista)
 mi_lista.invertList()
