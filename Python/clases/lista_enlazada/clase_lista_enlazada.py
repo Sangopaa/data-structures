@@ -1,7 +1,4 @@
-class Nodo:
-    def __init__(self, valor) -> None:
-        self.valor = valor
-        self.siguiente = None
+from ..nodo_clase import Nodo
         
 class ListaEnlazada:
     def __init__(self) -> None:
@@ -81,21 +78,3 @@ class ListaEnlazada:
             nodo_actual = siguiente_nodo
         
         self.cabeza = nodo_anterior
-        
-
-mi_lista = ListaEnlazada()
-
-# Agregar elementos al principio (push)
-mi_lista.append('holaa')
-mi_lista.append('como')
-mi_lista.append('estaaas')
-
-print(mi_lista)
-mi_lista.invertList()
-print(mi_lista)
-
-
-
-
-    
-    
