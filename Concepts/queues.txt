@@ -1,0 +1,13 @@
+Una cola es una estructura de datos lineal que sigue el principio "primero en entrar, primero en salir" (FIFO, por sus siglas en inglés, "First-In-First-Out"). Esto significa que el elemento que se agrega primero a la cola será el primero en ser retirado, similar a una fila en la vida real, donde la persona que llega primero es la primera en ser atendida.
+
+ACCIONES PRINCIPALES:
+
+Enqueue (Encolar): Agregar un elemento al final de la cola. Este es el proceso de "entrar" en la cola.
+
+Dequeue (Desencolar): Eliminar el elemento al frente de la cola. Este es el proceso de "salir" de la cola.
+
+Front (Frente): Obtener el elemento que está en la parte frontal de la cola sin eliminarlo.
+
+IsEmpty (Está vacía): Comprobar si la cola no contiene elementos.
+
+Size (Tamaño): Obtener el número de elementos en la cola.
