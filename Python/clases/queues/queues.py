@@ -1,6 +1,6 @@
 from ..nodo_clase import NodoQueue
 
-class Cola:
+class Queue:
     def __init__(self) -> None:
         self.cabeza = None
         self.final = None

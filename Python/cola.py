@@ -1,6 +1,6 @@
-from clases.colas.cola import Cola
+from clases.queues.queues import Queue
 
-mi_cola = Cola() 
+mi_cola = Queue() 
 print(mi_cola.Longitud())
 print('Valor a desencolar: ', mi_cola.ValorDesencolar())
 mi_cola.Encolar('hola')
