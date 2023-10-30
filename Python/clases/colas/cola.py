@@ -3,6 +3,8 @@ from ..nodo_clase import NodoQueue
 class Cola:
     def __init__(self) -> None:
         self.cabeza = None
+        self.final = None
+        self.longitud = 0
         
     def __str__(self) -> str:
         valores = []
@@ -19,26 +21,37 @@ class Cola:
         
         if not self.cabeza:
             self.cabeza = nuevoNodo
+            self.final = nuevoNodo
         else:
-            nodo_actual = self.cabeza
-            while nodo_actual.siguiente:
-                nodo_actual = nodo_actual.siguiente
-                
-            nodo_actual.siguiente = nuevoNodo
+            self.final.siguiente = nuevoNodo
+            self.final = nuevoNodo
+            
+        self.longitud += 1
+            
             
     def Desencolar(self):
         if self.cabeza:
             self.cabeza = self.cabeza.siguiente
+            self.longitud -= 1
             
-    def ValorDesencolar(self)-> NodoQueue:
-        nodo_saliente = None
+    def ValorDesencolar(self):
+        valor_saliente = None
+        if self.cabeza:
+            valor_saliente = self.cabeza.valor
+
+        return valor_saliente
+    
+    def EstaVacia(self):
+        valor_retoro = True
         
         if self.cabeza:
-            nodo_saliente = self.cabeza
-
-        return nodo_saliente.valor
+            valor_retoro = False
+            
+        return valor_retoro
     
-
+    def Longitud(self):
+        return self.longitud        
+        
         
             
         
