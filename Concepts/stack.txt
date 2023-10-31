@@ -1,0 +1,12 @@
+Los stacks (pilas) son una estructura de datos fundamental en informática que sigue el principio de LIFO (Last In, First Out), lo que significa que el último elemento que se inserta en la pila es el primero en salir. Aquí tienes una explicación de los conceptos clave que necesitas comprender para utilizar stacks de manera efectiva:
+
+Push: Agregar un elemento a la parte superior del stack.
+Pop: Eliminar y devolver el elemento en la parte superior del stack.
+Peek (o Top): Obtener el elemento en la parte superior del stack sin eliminarlo.
+isEmpty: Verificar si el stack está vacío.
+Size (o Count): Obtener el número de elementos en el stack.
+
+Complejidad temporal:
+
+La operación Push y Pop generalmente tienen una complejidad temporal de O(1), lo que significa que son operaciones muy eficientes.
+La operación isEmpty también tiene una complejidad de O(1).

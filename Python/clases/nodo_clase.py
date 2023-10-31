@@ -14,3 +14,7 @@ class NodoQueue:
         self.valor = valor
         self.siguiente = None
         
+class NodeStack:
+    def __init__(self, value) -> None:
+        self.value = value
+        self.siguiente = None
