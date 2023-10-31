@@ -1,7 +1,7 @@
 #Clase de lista simplemente enlazada
-from clases.lista_enlazada.clase_lista_enlazada import ListaEnlazada
+from clases.linked_list.class_linked_list import LinkedList
 
-mi_lista = ListaEnlazada()
+mi_lista = LinkedList()
 
 # Agregar elementos al principio (push)
 mi_lista.append('holaa')
