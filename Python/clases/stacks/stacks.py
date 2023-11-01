@@ -6,14 +6,14 @@ class Stack:
         self.length = 0
         
     def __str__(self) -> str:
-        valores = []
-        nodo_actual = self.head
+        values = []
+        current_node = self.head
         
-        while nodo_actual:
-            valores.append(str(nodo_actual.valor))
-            nodo_actual = nodo_actual.siguiente
+        while current_node:
+            values.append(str(current_node.value))
+            current_node = current_node.siguiente
             
-        return "[" + ", ".join(valores) + "]"
+        return "[" + ", ".join(values) + "]"
     
     def Push(self, value):
         new_node = NodeStack(value)
