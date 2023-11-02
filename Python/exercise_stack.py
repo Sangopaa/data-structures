@@ -32,9 +32,6 @@ def isBalanced(values_verify):
                 
         if value in values_expected and value in aperture_values:
             stack.Push(value)
-        
-        if value not in values_expected:
-            print('Caracter no reconocido')
             
     if not stack.isEmpty():
         balanced = False
