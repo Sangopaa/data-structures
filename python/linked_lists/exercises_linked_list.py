@@ -1,6 +1,11 @@
 from .classes.class_linked_list import LinkedList
 
 def run_exercises():
-    my_linked_list = LinkedList()
-    print('Exercises of linked lists')
-    print('My linked list: ', my_linked_list)
+    activate_console = True
+    
+    while activate_console == True:
+        print("""\n1. Exercises ONE.
+            \n2. Exercises TWO.
+            \n3. Exercises THREE""")
+        
+        input_value = int(input())
