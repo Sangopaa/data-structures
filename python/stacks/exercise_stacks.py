@@ -1,10 +1,14 @@
-from clases.stacks.stacks import Stack
+from .classes.class_stack import Stack
 
-stack = Stack()
-
-values_verify = '[[]'
+def run_exercises():
+    # Llama a una función del archivo importado
+    print('Ejercicios acerca de stacks')
+    
+    print('esta balanceada la expresion?: ', isBalanced('[]'))
+    
     
 def isBalanced(values_verify):
+    stack = Stack()
     balanced = True
     
     values_expected = ['[', ']', '{', '}', '(', ')']
@@ -37,5 +41,3 @@ def isBalanced(values_verify):
         balanced = False
             
     return balanced
-            
-print(isBalanced(values_verify))
