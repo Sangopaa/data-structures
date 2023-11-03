@@ -2,7 +2,7 @@ from .classes.class_stack import Stack
 
 def run_exercises():
     # Llama a una función del archivo importado
-    print('Ejercicios acerca de stacks')
+    print('Exercises of Stacks')
     
     print('esta balanceada la expresion?: ', isBalanced('[]'))
     

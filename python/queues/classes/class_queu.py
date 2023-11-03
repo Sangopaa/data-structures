@@ -1,54 +1,54 @@
-from .class_node import NodoQueue
+from .class_node import Node
 
 class Queue:
     def __init__(self) -> None:
-        self.cabeza = None
+        self.head = None
         self.final = None
-        self.longitud = 0
+        self.length = 0
         
     def __str__(self) -> str:
-        valores = []
-        nodo_actual = self.cabeza
+        values = []
+        current_node = self.head
         
-        while nodo_actual:
-            valores.append(str(nodo_actual.valor))
-            nodo_actual = nodo_actual.siguiente
+        while current_node:
+            values.append(str(current_node.value))
+            current_node = current_node.next
             
-        return "[" + ", ".join(valores) + "]"
+        return "[" + ", ".join(values) + "]"
         
-    def Encolar(self, valor):
-        nuevoNodo = NodoQueue(valor)
+    def Encolar(self, value):
+        new_node = Node(value)
         
-        if not self.cabeza:
-            self.cabeza = nuevoNodo
-            self.final = nuevoNodo
+        if not self.head:
+            self.head = new_node
+            self.final = new_node
         else:
-            self.final.siguiente = nuevoNodo
-            self.final = nuevoNodo
+            self.final.next = new_node
+            self.final = new_node
             
-        self.longitud += 1
+        self.length += 1
             
             
     def Desencolar(self):
-        if self.cabeza:
-            self.cabeza = self.cabeza.siguiente
-            self.longitud -= 1
+        if self.head:
+            self.head = self.head.next
+            self.length -= 1
             
-    def ValorDesencolar(self):
-        valor_saliente = None
-        if self.cabeza:
-            valor_saliente = self.cabeza.valor
+    def valueDesencolar(self):
+        output_value = None
+        if self.head:
+            output_value = self.head.value
 
-        return valor_saliente
+        return output_value
     
     def EstaVacia(self):
-        valor_retoro = True
+        output_value = True
         
-        if self.cabeza:
-            valor_retoro = False
+        if self.head:
+            output_value = False
             
-        return valor_retoro
+        return output_value
     
-    def Longitud(self):
-        return self.longitud        
+    def length(self):
+        return self.length        
         

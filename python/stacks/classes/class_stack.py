@@ -1,4 +1,4 @@
-from .class_node import NodeStack
+from .class_node import Node
 
 class Stack:
     def __init__(self) -> None:
@@ -11,29 +11,29 @@ class Stack:
         
         while current_node:
             values.append(str(current_node.value))
-            current_node = current_node.siguiente
+            current_node = current_node.next
             
         return "[" + ", ".join(values) + "]"
     
     def Push(self, value):
-        new_node = NodeStack(value)
-        new_node.siguiente = self.head
+        new_node = Node(value)
+        new_node.next = self.head
         self.head = new_node
         self.length += 1
         
     def Pop(self):
-        return_value = self.head.value
-        self.head = self.head.siguiente
+        output_value = self.head.value
+        self.head = self.head.next
         self.length -= 1
         
-        return return_value
+        return output_value
     
     def Peek(self):
-        return_value = None
+        output_value = None
         if self.head:
-            return_value = self.head.value
+            output_value = self.head.value
             
-        return return_value
+        return output_value
         
     def isEmpty(self):
         return self.head is None
