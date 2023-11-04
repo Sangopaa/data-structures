@@ -14,12 +14,12 @@ def decide_exercise(exercise:int) -> int:
 
 def run_exercises():
     # Llama a una función del archivo importado
-    print('EXERCISES OF STACKS\n\n')
+    print('\nEXERCISES OF STACKS\n\n')
     
     activate_console = True
     
     while activate_console == True:
-        print("""\n1. Dada una cadena que contiene paréntesis (), corchetes [] y llaves {}, tu tarea es determinar si la expresión está balanceada. Una expresión se considera balanceada si cada paréntesis, corchete y llave se abre y se cierra en el orden correcto y no hay elementos sobrantes o mal emparejados.""")
+        print("""\n1. Dada una cadena que contiene paréntesis (), corchetes [] y llaves {}, tu tarea es determinar si la expresión está balanceada. Una expresión se considera balanceada si cada paréntesis, corchete y llave se abre y se cierra en el orden correcto y no hay elementos sobrantes o mal emparejados.\n""")
         
         input_value = int(input())
         

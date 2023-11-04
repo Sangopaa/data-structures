@@ -16,7 +16,6 @@ def queues():
         #function that executes the queue exercises
         execises_queues()
     except:
-        print('Value Unexpected')
         stop_console()
     
 def stacks():
@@ -27,7 +26,6 @@ def stacks():
         #function that executes the stacks exercises
         exercises_stacks()
     except:
-        print('Value Unexpected')
         stop_console()
     
 def decide_data_structure(value: int) -> None | int:
@@ -55,7 +53,7 @@ while activate_console == True:
     try:
         print("""\n1. Exercises of linked lists.
               \n2. Exercises of queues.
-              \n3. Exercises of stacks.""")
+              \n3. Exercises of stacks.\n""")
         
         input_value = int(input())
         value_view = decide_data_structure(input_value)
