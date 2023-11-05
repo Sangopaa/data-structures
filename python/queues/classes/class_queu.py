@@ -16,7 +16,7 @@ class Queue:
             
         return "[" + ", ".join(values) + "]"
         
-    def Encolar(self, value):
+    def Enqueue(self, value):
         new_node = Node(value)
         
         if not self.head:
@@ -29,26 +29,20 @@ class Queue:
         self.length += 1
             
             
-    def Desencolar(self):
+    def Dequeue(self):
         if self.head:
             self.head = self.head.next
             self.length -= 1
             
-    def valueDesencolar(self):
+    def Front(self):
         output_value = None
         if self.head:
             output_value = self.head.value
 
         return output_value
     
-    def EstaVacia(self):
-        output_value = True
-        
-        if self.head:
-            output_value = False
-            
-        return output_value
+    def IsEmpty(self):
+        return self.head is None
     
-    def length(self):
-        return self.length        
-        
+    def Length(self):
+        return self.length      
