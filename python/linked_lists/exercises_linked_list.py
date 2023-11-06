@@ -1,6 +1,7 @@
 from .classes.class_linked_list import LinkedList
 
 def run_exercises():
+    print('\nEXERCISES OF QUEUES\n\n')
     activate_console = True
     
     while activate_console == True:
