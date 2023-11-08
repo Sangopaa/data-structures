@@ -5,9 +5,7 @@ my_tasks = [{'name_task': 'task one', 'status': 'pending'},
             {'name_task': 'task three', 'status': 'pending'}]
 
 
-my_linked_list = LinkedList()
-
-for element in my_tasks:
-    my_linked_list.push(element)
+my_linked_list = LinkedList()    
     
-print(my_linked_list)
+def addItem(element):
+    my_linked_list.push(element)
